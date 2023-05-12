@@ -1,46 +1,26 @@
-import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import React, { useState } from 'react';
+import TabList from './TabList';
+import TabContent from './TabContent';
 
-function App() {
+const App = () => {
+  // The App component uses the useState hook to manage the state of the currently selected tab.
+  const [activeTab, setActiveTab] = useState('Projects');
+
+  // The tabs array defines the list of tabs to be displayed in the tabbed interface.
+  const tabs = [
+    { title: 'Projects' },
+    { title: 'Work Experience' },
+    { title: 'Hobbies' },
+  ];
+
   return (
-    <div className="App">
-      <Container fluid>
-        <Row className="justify-content-center">
-          <Col md={8}>
-            <Card className="text-center p-4">
-              <Card.Body>
-                <Card.Title>Welcome to Ayush's website!</Card.Title>
-                <Card.Text>This is a simple website that I created using React and Bootstrap.</Card.Text>
-                <Button variant="primary" href="#about">Learn more</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col md={4}>
-            <Card className="mb-3">
-              <Card.Img variant="top" src="https://source.unsplash.com/random/300x200?nature" />
-              <Card.Body>
-                <Card.Title>Nature</Card.Title>
-                <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
-                <Button variant="outline-secondary" href="#nature">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="mb-3">
-              <Card.Img variant="top" src="https://source.unsplash.com/random/300x200?city" />
-              <Card.Body>
-                <Card.Title>City</Card.Title>
-                <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
-                <Button variant="outline-secondary" href="#city">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
+    <div>
+      {/* The App component renders a TabList component and passes it the tabs, activeTab, and setActiveTab props. */}
+      <TabList tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
+      {/* The App component also renders a TabContent component and passes it the activeTab prop. */}
+      <TabContent activeTab={activeTab} />
     </div>
   );
-}
+};
 
 export default App;

@@ -16,6 +16,7 @@ const Home = () => {
   const Video = () => (
     <>
       <iframe
+        title="PianoTilesVideo"
         width="560"
         height="315"
         src="https://videopress.com/embed/roNZVBdh"

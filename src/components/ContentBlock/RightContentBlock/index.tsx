@@ -20,12 +20,12 @@ const RightBlock = ({
   const downloadPdf = () => {
     window.open("/resume.pdf", "_blank");
   };
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+  // const scrollTo = (id: string) => {
+  //   const element = document.getElementById(id) as HTMLDivElement;
+  //   element.scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  // };
   return (
     <RightBlockContainer>
       <Fade direction="right">

@@ -129,7 +129,7 @@ const Footer = ({ t }: any) => {
       <Extra>
         <Container border={true}>
           <Row
-            justify="end"
+            justify="space-between"
             // align="middle"
             style={{ paddingTop: "3rem" }}
           >
@@ -138,8 +138,8 @@ const Footer = ({ t }: any) => {
                 <SvgIcon
                   src="logo.png"
                   aria-label="homepage"
-                  width="101px"
-                  height="64px"
+                  width="100px"
+                  height="100px"
                 />
               </LogoContainer>
             </NavLink>

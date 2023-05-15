@@ -1,0 +1,4 @@
+{
+  "title": "Community Garden",
+  "text": "I was the design lead on this team where we worked to create a machine learning image classification application for a community in Acevedo, Colombia. The goal of the application is to help the people of the community identify the plants in their garden as well as to give them the information that they need to sustainably harvest said plants. I used TensorFlow to create the image classification model and helped make the application in Android Studios."
+}

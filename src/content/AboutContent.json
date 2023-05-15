@@ -1,0 +1,11 @@
+{
+  "title": "Piano Tiles on a Microcontroller",
+  "text": "I was the lead developer of a team creating an arcade-style game using a microcontroller. I was in charge of designing and implementing the game logic, creating the graphics, and executing the sound mechanism in the system. The program utilized a combination of timers, IRQ’s, GPIO, SPI, DAC, etc. I also helped with the hardware component, designing the circuit schematic, prototyping the design on a breadboard, and helping manufacture the PCB.",
+  "section": [
+    {
+      "title": "GitHub Link",
+      "content": "https://github.com/AyushPrj/Piano-Tiles",
+      "icon": "github.svg"
+    }
+  ]
+}

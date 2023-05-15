@@ -1,0 +1,11 @@
+{
+  "title": "Module Registry",
+  "text": "I led a team to build a npm-like web-based package management system that allows users to upload, update, reate, search, and download packages. I developed and deployed the backend, the REST APIs, and the frontend of the application using Go, Firestore, and Reacton Google Cloud Platform along with Continuous Integration and Deployment.",
+  "section": [
+    {
+      "title": "GitHub Link",
+      "content": "https://github.com/AyushPrj/ModuleRegistry",
+      "icon": "github.svg"
+    }
+  ]
+}

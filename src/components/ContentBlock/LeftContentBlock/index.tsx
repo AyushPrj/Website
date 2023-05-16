@@ -9,7 +9,7 @@ import {
   ContentWrapper,
   ServiceWrapper,
   MinTitle,
-  MinPara,
+  // MinPara,
 } from "./styles";
 
 const LeftContentBlock = ({
